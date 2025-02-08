@@ -6,3 +6,16 @@ spring:
   h2:
     console:
       enabled: true
+
+  spring:
+    datasource:
+      driverClassName: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/apps_database?useSSL=false
+      username: root
+      password: root
+    jpa:
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+      hibernate:
+        ddl-auto: update
